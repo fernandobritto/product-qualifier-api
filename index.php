@@ -1,1 +1,1 @@
-Ecletic theme
+Ecletic themes
