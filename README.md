@@ -1,3 +1,3 @@
 # eclectic-wp-theme
 
-:globe_with_meridians: Moderno tema responsivo feito para WordPress. :globe_with_meridians:
+:globe_with_meridians: Moderno tema responsivo. :globe_with_meridians:
