@@ -2,8 +2,7 @@
 
 <html>
     <head>
-        <?php  include_once './head.php';   ?>
-        
+        <?php  include_once './head.php';   ?>        
     </head>
     <body>
         <?php
