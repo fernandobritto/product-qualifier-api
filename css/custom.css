@@ -1,0 +1,15 @@
+/*  Document CSS */
+
+/* Height 100% */
+html,body {height: 100%;}
+.bloco {min-height: 100%;}
+
+/* HOME */
+.home {	background-image: url('../assets/img/bg.jpg'); 
+		background-repeat: no-repeat; 
+		background-size: cover;
+}
+
+
+
+
