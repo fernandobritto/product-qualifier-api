@@ -5,7 +5,7 @@ html,body {height: 100%;}
 .bloco {min-height: 100%;}
 
 /* HOME */
-.home {	background-image: url('../assets/img/bg.jpg'); 
+.home {	background-image: url('../assets/img/slide1.png'); 
 		background-repeat: no-repeat; 
 		background-size: cover;
 }
