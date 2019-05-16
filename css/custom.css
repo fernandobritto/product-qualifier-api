@@ -5,15 +5,24 @@ html,body {height: 100%;}
 .bloco {min-height: 100%;}
 
 /* HOME */
-.home {	background-image: url('../assets/img/slide1.png'); 
+.home {	animation: slide_home 20s infinite;
+		background-image: url('../assets/img/slide1.png'); 
 		background-repeat: no-repeat; 
 		background-size: cover;
 }
 .banner h2 {font-size: 2.5rem; font-weight: 900; text-transform: uppercase;}
 .banner p {font-size: 1.2rem; line-height: 1.8rem;}
 
+/* HOME - ANIMATION */
+@keyframes slide_home{
+	40% {background-image: url('../assets/img/slide2.png'); }
+	80% {background-image: url('../assets/img/slide3.png'); }
+	100% {background-image: url('../assets/img/slide1.png'); }
+}
+
+
 /* MEDIA */
-@media only screen and (min-width: 480px) {
+@media only screen and (max-width: 480px) {
   
 }
 
@@ -26,6 +35,5 @@ html,body {height: 100%;}
 	.banner {padding-top: 5rem}
   	.banner h2 {font-size: 5rem;}
 }
-
 
 
