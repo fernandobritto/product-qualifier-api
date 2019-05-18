@@ -2,7 +2,11 @@
 
 /* Height 100% */
 html,body {height: 100%;}
-.bloco {min-height: 100%;}
+.bloco {min-height: 100%; padding-top: 94px;}
+
+/* Colors */
+.cor1-ecl {background-color: #09195C;}
+
 
 /* HOME */
 .home {	animation: slide_home 20s infinite;
@@ -13,9 +17,26 @@ html,body {height: 100%;}
 .banner h2 {font-size: 2.5rem; font-weight: 900; text-transform: uppercase;}
 .banner p {font-size: 1.2rem; line-height: 1.8rem;}
 
+
 /* LOGO */
 .logo_text {font-size: 0; margin: 0;}
 .logo_img {width: 250px; margin-top: 15px}
+
+
+/* HOME - ANIMATION */
+@keyframes slide_home{
+	40% {background-image: url('../assets/img/slide2.png'); }
+	80% {background-image: url('../assets/img/slide3.png'); }
+	100% {background-image: url('../assets/img/slide1.png'); }
+}
+
+
+/*  MENU  */
+.navbar {background-color: transparent;}
+.navbar ul a:hover {background-color: transparent; color:#09195C;}
+
+
+/***************** CUSTOM *************************/
 
 nav {
   color: #fff;
@@ -31,14 +52,17 @@ nav.nav-extended .nav-wrapper {
 }
 
 
-
-
-/* HOME - ANIMATION */
-@keyframes slide_home{
-	40% {background-image: url('../assets/img/slide2.png'); }
-	80% {background-image: url('../assets/img/slide3.png'); }
-	100% {background-image: url('../assets/img/slide1.png'); }
+.navbar-fixed {
+  position: absolute;
+  height: 94px;
+  z-index: 997;
 }
+
+/***************** CUSTOM *************************/
+
+
+
+
 
 
 /* MEDIA */
