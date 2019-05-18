@@ -60,6 +60,15 @@ nav.nav-extended .nav-wrapper {
   z-index: 997;
 }
 
+nav i,
+nav [class^="mdi-"], nav [class*="mdi-"],
+nav i.material-icons {
+  display: block;
+  font-size: 24px;
+  height: 94px;
+  line-height: 94px;
+}
+
 /***************** CUSTOM *************************/
 
 
