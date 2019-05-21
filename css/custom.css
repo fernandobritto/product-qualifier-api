@@ -10,6 +10,18 @@ html,body {height: 100%;}
 .cor3-ecl {background-color: #09195C;}
 
 
+
+/* LOGO */
+.logo_text {font-size: 0; margin: 0;}
+.logo_img {width: 250px; margin-top: 15px}
+
+
+/*  MENU  */
+.navbar {background-color: transparent;}
+.navbar ul a:hover {background-color: transparent; color:#09195C;}
+
+
+
 /* HOME */
 .home {	animation: slide_home 20s infinite;
 		background-image: url('../assets/img/slide1.png'); 
@@ -20,11 +32,6 @@ html,body {height: 100%;}
 .banner p {font-size: 1.2rem; line-height: 1.8rem;}
 
 
-/* LOGO */
-.logo_text {font-size: 0; margin: 0;}
-.logo_img {width: 250px; margin-top: 15px}
-
-
 /* HOME - ANIMATION */
 @keyframes slide_home{
 	40% {background-image: url('../assets/img/slide2.png'); }
@@ -33,9 +40,10 @@ html,body {height: 100%;}
 }
 
 
-/*  MENU  */
-.navbar {background-color: transparent;}
-.navbar ul a:hover {background-color: transparent; color:#09195C;}
+/*   SOBRE   */
+.sobre{}
+
+
 
 
 /***************** CUSTOM *************************/
