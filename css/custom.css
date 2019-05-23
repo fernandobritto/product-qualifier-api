@@ -19,6 +19,7 @@ html,body {height: 100%;}
 /*  MENU  */
 .navbar {background-color: transparent;}
 .navbar ul a:hover {background-color: transparent; color:#09195C;}
+.nav-color{ background-color: rgba(0, 0, 0, 0.7); transition: background 0.5s linear; }
 
 
 
