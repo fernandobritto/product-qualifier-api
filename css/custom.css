@@ -41,7 +41,10 @@ html,body {height: 100%;}
 
 
 /*   SOBRE   */
-.sobre{}
+.sobre{ background-image: url('../assets/img/textura1.jpg') }
+.sobre h2 { font-size: 2rem; color: #212121; text-transform: uppercase; }
+.sobre h2::after { content: ''; display: block; width: 100px; border-top:  1px solid #1E4598; margin:15px auto;}
+.sobre p {line-height: 1.8rem; text-align: justify}
 
 
 
