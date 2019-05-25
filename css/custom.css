@@ -42,7 +42,7 @@ html,body {height: 100%;}
 
 
 /*   SOBRE   */
-.sobre{ background-image: url('../assets/img/textura1.jpg') }
+.sobre{ background-image: url('../assets/img/textura1.png') }
 .sobre h2 { font-size: 2rem; color: #212121; text-transform: uppercase; }
 .sobre h2::after { content: ''; display: block; width: 100px; border-top:  1px solid #1E4598; margin:15px auto;}
 .sobre p {line-height: 1.8rem; text-align: justify}
@@ -51,11 +51,13 @@ html,body {height: 100%;}
 .sobre .missao-visao-valores h3 {font-size: 1.5rem; color:#FFF; text-transform: uppercase;}
 .sobre .missao-visao-valores p {color:#FFF; text-align: center;}
 
+
 /*   SOLUÇÕES   */
-.solucoes {background-image: url('../assets/img/textura2.jpg');}
+.solucoes {background-image: url('../assets/img/textura2.png');}
 .solucoes h2 { font-size: 2rem; color: #ffffff; text-transform: uppercase; }
 .solucoes h2::after { content: ''; display: block; width: 100px; border-top:  1px solid #1E4598; margin:15px auto;}
 .solucoes p {color: #ffffff; line-height: 1.8rem;}
+
 
 
 

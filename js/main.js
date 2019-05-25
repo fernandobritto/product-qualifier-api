@@ -4,10 +4,18 @@ $(document).ready(function(){
 	//  Menu Mobile 
    $('.sidenav').sidenav();
 
+   // Link Interno
+   $(".scrollspy").scrollSpy({
+   		scrollOffset: 0
+   });
+
    // Carousel
 	$(".carousel.carousel-slider").carousel({
 		fullWidth:true
 	});  
+
+	// Modal
+	$(".modal").modal();
 
 
 });
