@@ -7,3 +7,8 @@ $(window).on("scroll", function(){
 		$(".navbar").removeClass("nav-color");
 	}
 });
+
+/*  Menu Mobile */
+$(document).ready(function(){
+   $('.sidenav').sidenav();
+});

@@ -21,7 +21,7 @@
 <body>
 	<header>
 		<!--  Menu Mobile  -->
-		<ul class="sidenav" id="menu-mobile">
+		<ul id="slide-out" class="sidenav">
 			<li><a href="#home">Home</a></li>
 			<li><a href="#sobre">Sobre</a></li>
 			<li><a href="#solucoes">Soluções</a></li>
@@ -41,9 +41,9 @@
 					<li><a href="#ead">EAD</a></li>
 					<li><a href="#contato">Contato</a></li>
 				</ul>
-
-				<a href="#" data-activates="menu-mobile" class="button-collapse right"><i class="material-icons">menu</i></a>
-
+	
+				<a href="#" data-target="slide-out" class="sidenav-trigger right"><i class="material-icons">menu</i></a>
+  		
 			</div>
 		</nav>
 		</div>
@@ -88,19 +88,8 @@
 
 
 	<script src="js/jquery.js"></script>
-	<!-- MATERIALIZE JS -->
 	<script src="js/materialize.js"></script>
 	<script src="js/main.js"></script>
-
-	<script>
-		// document.addEventListener('DOMContentLoaded', function() {
-  //   	var elems = document.querySelectorAll('.sidenav');
-  //   	var instances = M.Sidenav.init(elems, options);
-  // 		});
-
-  		
-	</script>
-
 </body>
 </html>
 

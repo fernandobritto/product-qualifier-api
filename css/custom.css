@@ -81,6 +81,8 @@ nav i.material-icons {
   line-height: 94px;
 }
 
+.sidenav {}
+
 /***************** CUSTOM *************************/
 
 
@@ -102,5 +104,11 @@ nav i.material-icons {
 	.banner {padding-top: 5rem}
   	.banner h2 {font-size: 5rem;}
 }
+
+@media only screen and (min-width: 993px) {
+   nav a.button-collapse {
+    display: none;
+   }
+ }
 
 
