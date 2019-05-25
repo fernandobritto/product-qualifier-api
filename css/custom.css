@@ -17,7 +17,7 @@ html,body {height: 100%;}
 
 
 /*  MENU  */
-.navbar {background-color: transparent;}
+.navbar {background-color: transparent; transition: background 0.5s linear;}
 .navbar ul a:hover {background-color: transparent; color:#09195C;}
 .nav-color{ background-color: rgba(0, 0, 0, 0.7); transition: background 0.5s linear; }
 
@@ -46,6 +46,18 @@ html,body {height: 100%;}
 .sobre h2 { font-size: 2rem; color: #212121; text-transform: uppercase; }
 .sobre h2::after { content: ''; display: block; width: 100px; border-top:  1px solid #1E4598; margin:15px auto;}
 .sobre p {line-height: 1.8rem; text-align: justify}
+.sobre .missao-visao-valores{padding: 20px 0; margin-top: 35px;}
+.sobre .missao-visao-valores .icon {color:#FFF;}
+.sobre .missao-visao-valores h3 {font-size: 1.5rem; color:#FFF; text-transform: uppercase;}
+.sobre .missao-visao-valores p {color:#FFF; text-align: center;}
+
+/*   SOLUÇÕES   */
+.solucoes {background-image: url('../assets/img/textura2.jpg');}
+.solucoes h2 { font-size: 2rem; color: #ffffff; text-transform: uppercase; }
+.solucoes h2::after { content: ''; display: block; width: 100px; border-top:  1px solid #1E4598; margin:15px auto;}
+.solucoes p {color: #ffffff; line-height: 1.8rem;}
+
+
 
 
 
@@ -97,18 +109,20 @@ nav i.material-icons {
 
 @media only screen and (min-width: 601px) {
 	.banner {padding-top: 4.5rem}
-	.banner h2 {font-size: 4rem;}	
+	.banner h2 {font-size: 4rem;}
+	.container {width: 85%;}	
 }
 
 @media only screen and (min-width: 993px) {
 	.banner {padding-top: 5rem}
   	.banner h2 {font-size: 5rem;}
+  	.container {width: 90%;}
 }
 
 @media only screen and (min-width: 993px) {
-   nav a.button-collapse {
-    display: none;
-   }
+	nav a.button-collapse {
+    	display: none;
+   	}
  }
 
 

@@ -1,4 +1,20 @@
 
+// INICIALIZAÇÃO
+$(document).ready(function(){
+	//  Menu Mobile 
+   $('.sidenav').sidenav();
+
+   // Carousel
+	$(".carousel.carousel-slider").carousel({
+		fullWidth:true
+	});  
+
+
+});
+
+
+
+
 /*  Navbar Color */
 $(window).on("scroll", function(){
 	if($(window).scrollTop() > 100){
@@ -8,7 +24,3 @@ $(window).on("scroll", function(){
 	}
 });
 
-/*  Menu Mobile */
-$(document).ready(function(){
-   $('.sidenav').sidenav();
-});
