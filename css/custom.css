@@ -41,10 +41,15 @@ html,body {height: 100%;}
 }
 
 
+/*  TITULO E PARAGRAFO */
+.titulo { font-size: 2rem; text-transform: uppercase;}
+.titulo::after { content: ''; display: block; width: 100px; border-top:  1px solid #1E4598; margin:15px auto;}
+.parag { line-height: 1.8rem; }
+
+
+
 /*   SOBRE   */
 .sobre{ background-image: url('../assets/img/textura1.png') }
-.sobre h2 { font-size: 2rem; color: #212121; text-transform: uppercase; }
-.sobre h2::after { content: ''; display: block; width: 100px; border-top:  1px solid #1E4598; margin:15px auto;}
 .sobre p {line-height: 1.8rem; text-align: justify}
 .sobre .missao-visao-valores{padding: 20px 0; margin-top: 35px;}
 .sobre .missao-visao-valores .icon {color:#FFF;}
@@ -54,17 +59,12 @@ html,body {height: 100%;}
 
 /*   SOLUÇÕES   */
 .solucoes {background-image: url('../assets/img/textura2.png');}
-.solucoes h2 { font-size: 2rem; color: #ffffff; text-transform: uppercase; }
-.solucoes h2::after { content: ''; display: block; width: 100px; border-top:  1px solid #1E4598; margin:15px auto;}
-.solucoes p {color: #ffffff; line-height: 1.8rem;}
+
 
 
 /*   CLIENTES   */
 .clientes {background-image: url('../assets/img/img/bg-unidades.jpg'); background-repeat: no-repeat;
 background-size: cover; background-attachment: fixed}
-.clientes h2 { font-size: 2rem; color: #ffffff; text-transform: uppercase; }
-.clientes h2::after { content: ''; display: block; width: 100px; border-top:  1px solid #1E4598; margin:15px auto;}
-.clientes p {color: #ffffff; line-height: 1.8rem;}
 
 
 
@@ -78,6 +78,7 @@ background-size: cover; background-attachment: fixed}
   line-height: 94px;
 } */
 
+
 nav.nav-extended .nav-wrapper {
   min-height: 94px;
 }
@@ -90,7 +91,7 @@ nav.nav-extended .nav-wrapper {
 
 nav, nav i,
 nav [class^="mdi-"], nav [class*="mdi-"],
-nav i.material-icons {
+nav i.material-icons, nav a.button-collapse i {
   height: 94px;
   line-height: 94px;
 }
