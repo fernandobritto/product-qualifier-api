@@ -59,6 +59,13 @@ html,body {height: 100%;}
 .solucoes p {color: #ffffff; line-height: 1.8rem;}
 
 
+/*   CLIENTES   */
+.clientes {background-image: url('../assets/img/img/bg-unidades.jpg'); background-repeat: no-repeat;
+background-size: cover; background-attachment: fixed}
+.clientes h2 { font-size: 2rem; color: #ffffff; text-transform: uppercase; }
+.clientes h2::after { content: ''; display: block; width: 100px; border-top:  1px solid #1E4598; margin:15px auto;}
+.clientes p {color: #ffffff; line-height: 1.8rem;}
+
 
 
 
@@ -66,36 +73,32 @@ html,body {height: 100%;}
 
 /***************** CUSTOM *************************/
 
-nav {
-  color: #fff;
-  background-color: #09195C;
-  width: 100%;
+/* nav {
   height: 94px;
   line-height: 94px;
-}
+} */
 
 nav.nav-extended .nav-wrapper {
   min-height: 94px;
-  height: auto;
 }
 
 
 .navbar-fixed {
   position: absolute;
   height: 94px;
-  z-index: 997;
 }
 
-nav i,
+nav, nav i,
 nav [class^="mdi-"], nav [class*="mdi-"],
 nav i.material-icons {
-  display: block;
-  font-size: 24px;
   height: 94px;
   line-height: 94px;
 }
 
-.sidenav {}
+.sidenav {background: url('../assets/img/textura2.png'); }
+.sidenav li>a {color: #fff; font-weight: 100;}
+
+.row {margin-bottom: 0;}
 
 /***************** CUSTOM *************************/
 
