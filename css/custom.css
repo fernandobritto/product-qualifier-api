@@ -109,7 +109,7 @@ nav i.material-icons {
 
 /* MEDIA */
 @media only screen and (max-width: 480px) {
-  
+  .card-image-horizontal{display: none;}
 }
 
 @media only screen and (min-width: 601px) {
