@@ -65,6 +65,7 @@ html,body {height: 100%;}
 /*   CLIENTES   */
 .clientes {background-image: url('../assets/img/img/bg-unidades.jpg'); background-repeat: no-repeat;
 background-size: cover; background-attachment: fixed}
+.clientes article p {line-height: 1.8rem;}
 
 
 

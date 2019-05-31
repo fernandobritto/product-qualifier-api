@@ -17,6 +17,22 @@ $(document).ready(function(){
 	// Modal
 	$(".modal").modal();
 
+	// Tabs
+	$("ul.tabs").tabs();
+
+	// Esconder menu Mobile
+	$(".hide-menu").click(function() {
+		 $('.sidenav').sidenav('close');
+	});
+
+	//Autoplay
+	function autoplay(){
+		$(".carousel").carousel("next");
+		setTimeout(autoplay, 4500);
+	}
+
+	autoplay();
+
 
 });
 
@@ -31,4 +47,5 @@ $(window).on("scroll", function(){
 		$(".navbar").removeClass("nav-color");
 	}
 });
+
 
