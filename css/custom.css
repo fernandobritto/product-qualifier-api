@@ -68,6 +68,14 @@ background-size: cover; background-attachment: fixed}
 .clientes article p {line-height: 1.8rem;}
 
 
+/*   CONTATO   */
+.contato{ background-image: url('../assets/img/textura1.png'); }
+.contato .mapa {min-height: 500px;}
+.contato .mapa iframe {width: 100%; min-height: 500px; border: none;}
+
+
+
+
 
 
 
