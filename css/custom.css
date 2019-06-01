@@ -77,6 +77,17 @@ background-size: cover; background-attachment: fixed}
 .contato .formulario { min-height: 560px; padding: 30px; }
 
 
+/*  DEPOIMENTOS */
+.depoimentos .titulo::after{ border-color: #fff; }
+.depoimentos img {width: 100px;}
+.depoimentos h4 {font-size: 1.2rem; font-weight: 900;}
+
+
+
+
+/* RODAPE */
+.rodape {background-image: url('../assets/img/img/bg-rodape.jpg'); background-repeat: no-repeat; 
+background-size: cover; padding: 30px 0;}
 
 
 
