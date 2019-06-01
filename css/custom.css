@@ -70,10 +70,11 @@ background-size: cover; background-attachment: fixed}
 
 /*   CONTATO   */
 .contato{ background-image: url('../assets/img/textura1.png'); }
-.contato .mapa {min-height: 500px;}
-.contato .mapa iframe {width: 100%; min-height: 500px; border: none;}
-
-
+.contato h4 {font-size: 1.2rem; text-transform: uppercase; font-weight: 900;}
+.contato .mapa {min-height: 560px;}
+.contato .mapa iframe {width: 100%; min-height: 560px; border: none;}
+.contato .informacoes { background-image: url('../assets/img/textura2.png'); min-height: 560px; padding: 30px;}
+.contato .formulario { min-height: 560px; padding: 30px; }
 
 
 
