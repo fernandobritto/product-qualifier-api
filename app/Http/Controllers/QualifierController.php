@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Qualifier;
 use Illuminate\Http\Request;
 
 class QualifierController extends Controller
@@ -13,9 +14,8 @@ class QualifierController extends Controller
      */
     public function index()
     {
-        //
+        return response()->json( Qualifier::all(), 201);
     }
-
 
 
     /**
@@ -26,8 +26,15 @@ class QualifierController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        try{
+            Qualifier::create($request->all());
+            return response()->json(['data' => ['msg' => 'Product Qualifier!']], 200);
+
+        }catch (\Exception $e){
+            return response()->json(['error' => $e->getMessage()], 401);
+        }
     }
+
 
     /**
      * Display the specified resource.
@@ -37,9 +44,19 @@ class QualifierController extends Controller
      */
     public function show($id)
     {
-        //
-    }
+        try{
+            $prodQualifier = Qualifier::findOrFail($id);
+            return response()->json(['data' => [
+                'msg' => 'Product',
+                'data' => $prodQualifier,
+                'code' => rand()
+            ]], 202);
 
+        }catch (\Exception $e){
+            return response()->json(['error' => $e->getMessage()], 401);
+        }
+
+    }
 
 
     /**
@@ -51,8 +68,16 @@ class QualifierController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        try{
+            $prodQualifier = Qualifier::findOrFail($id);
+            $prodQualifier->update($request->all());
+            return response()->json(['data' => ['msg' => 'Product Qualifier!']], 200);
+
+        }catch (\Exception $e){
+            return response()->json(['error' => $e->getMessage()], 401);
+        }
     }
+
 
     /**
      * Remove the specified resource from storage.
@@ -62,6 +87,13 @@ class QualifierController extends Controller
      */
     public function destroy($id)
     {
-        //
+        try{
+            $prodQualifier = Qualifier::findOrFail($id);
+            $prodQualifier->delete();
+            return response()->json(['msg' => 'Destroy OK'], 200);
+
+        }catch (\Exception $e){
+            return response()->json(['error' => $e->getMessage()], 401);
+        }
     }
 }

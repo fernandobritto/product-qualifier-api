@@ -18,5 +18,10 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 
 Route::prefix('v1')->group(function (){
-    Route::resource('/', 'QualifierController');
+    //Route::resource('/', 'QualifierController');
+    Route::get('/', 'QualifierController@index');
+    Route::post('/', 'QualifierController@store');
+    Route::get('/{id}', 'QualifierController@show');
+    Route::put('/{id}', 'QualifierController@update');
+    Route::delete('/{id}', 'QualifierController@destroy');
 });
