@@ -1,13 +1,25 @@
-/node_modules
-/public/hot
-/public/storage
-/storage/*.key
-/vendor
-/.idea
+# package directories
+node_modules
+jspm_packages
+
+# CDK asset staging directory
+.cdk.staging
+cdk.out
+
+# Serverless directories
+.serverless
+
+# DynamoDB Local files
+.dynamodb/
+
+# dotenv environment variables file
 .env
-.env.backup
-.phpunit.result.cache
-Homestead.json
-Homestead.yaml
-npm-debug.log
-yarn-error.log
+.env.test
+
+# OS generated files
+.DS_Store
+.DS_Store?
+
+*.js
+!jest.config.js
+*.d.ts
