@@ -6,12 +6,6 @@ jspm_packages
 .cdk.staging
 cdk.out
 
-# Serverless directories
-.serverless
-
-# DynamoDB Local files
-.dynamodb/
-
 # dotenv environment variables file
 .env
 .env.test

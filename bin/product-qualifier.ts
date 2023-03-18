@@ -8,7 +8,6 @@ import { ProductQualifierApiStack } from '../lib/productQualifierApi-stack'
 const app = new cdk.App()
 
 const env: cdk.Environment = {
-  account: '791950794107',
   region: 'us-east-2',
 }
 
@@ -26,6 +25,7 @@ const productsAppStack = new ProductAppStack(app, 'ProductsApp', {
 
 const productQualifierApiStack = new ProductQualifierApiStack(app, 'ProductQualifierApi', {
   productsFetchHandler: productsAppStack.productsFetchHandler,
+  productsAdminHandler: productsAppStack.productsAdminHandler,
   tags: tags,
   env: env
 })

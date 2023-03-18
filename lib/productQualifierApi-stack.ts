@@ -1,12 +1,13 @@
 import * as cdk from 'aws-cdk-lib'
-import * as lambdaNodeJS from 'aws-cdk-lib/aws-lambda-nodejs'
-import * as apigateway from 'aws-cdk-lib/aws-apigateway'
 import * as cwlogs from 'aws-cdk-lib/aws-logs'
+import * as apigateway from 'aws-cdk-lib/aws-apigateway'
+import * as lambdaNodeJS from 'aws-cdk-lib/aws-lambda-nodejs'
+
 import {Construct} from 'constructs'
 
 interface ProductQualifierApiStackProps extends cdk.StackProps {
   productsFetchHandler:  lambdaNodeJS.NodejsFunction
-  // productsAdminHandler:  lambdaNodeJS.NodejsFunction
+  productsAdminHandler:  lambdaNodeJS.NodejsFunction
 }
 
 
@@ -44,16 +45,16 @@ export class ProductQualifierApiStack extends cdk.Stack{
     const productIdResource = api.root.addResource('{id}')
     productIdResource.addMethod('GET', productsFetchIntegration)
 
-    // const productsAdminIntegration = new apigateway.LambdaIntegration(props.productsAdminHandler)
+    const productsAdminIntegration = new apigateway.LambdaIntegration(props.productsAdminHandler)
 
-    // // POST
-    // productsResource.addMethod('POST', productsAdminIntegration)
+    // POST
+    productsResource.addMethod('POST', productsAdminIntegration)
 
-    // // PUT
-    // productIdResource.addMethod('PUT', productsFetchIntegration)
+    // PUT
+    productIdResource.addMethod('PUT', productsFetchIntegration)
 
-    // // DELETE
-    // productIdResource.addMethod('DELETE', productsFetchIntegration)
+    // DELETE
+    productIdResource.addMethod('DELETE', productsFetchIntegration)
 
   }
 }
